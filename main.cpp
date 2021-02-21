@@ -1,5 +1,10 @@
 #include "algos.h"
 
+/*
+     vectorGenerator function is a generalized
+     function for manually/randomly genrating
+     a vector of integers
+*/
 vector<int> vectorGenerator(string input)
 {
             vector<int> resultantVector;
@@ -24,6 +29,7 @@ vector<int> vectorGenerator(string input)
             return resultantVector;
 }
 
+//beginning of main function
 int main()
 {
     cout<<"Welcome! This program implements and tests three sorting algorithms on vector of integers."<<endl;
@@ -46,7 +52,7 @@ int main()
 
             resultantVector=vectorGenerator(input);
             resultantVector=csort(resultantVector);
-            //resultantVector=radixSort(resultantVector);
+            //resultantVector=radixSort(resultantVector);   //Testing the radix sort function for sorting vector of integers
             printVector(resultantVector);
         }
 
