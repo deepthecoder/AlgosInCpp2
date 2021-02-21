@@ -8,7 +8,7 @@
 vector<int> vectorGenerator(string input)
 {
             vector<int> resultantVector;
-            if(input=="N")
+            if(input=="N" || input =="n")
             {
                 int vectorLength=0,minValue=0,maxValue=0;
                 cout<<"Vector Length : ";
@@ -19,11 +19,12 @@ vector<int> vectorGenerator(string input)
                 cin>>maxValue;
                 resultantVector=generateVector(vectorLength,minValue,maxValue);
             }
-            else if(input=="Y")
+            else if(input=="Y"  || input =="y")
             {
                 cout<<"Enter the length of vector to generate: ";
                 int length=0;
                 cin>>length;
+                cout<<"Please enter "<<length<<" elements"<<endl;
                 resultantVector=manualVector(length);
             }
             return resultantVector;
